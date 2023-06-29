@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+
+.registration-comp{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  z-index: 10;
+  background-color: ghostwhite;
+  transition: none !important;
+}
+
+.err-msg{
+  position: fixed;
+  top: 4rem;
+  width: 100%; 
+}
+
+.err-msg span{
+  width: 350px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  background-color: rgba(252, 67, 67, 0.898);
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.err-msg span p{
+  color: #fbfbff;
+  font-size: 1.8rem;
+}
+
+.err-msg svg{
+  color: rgb(223, 0, 0);
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+.welcome-msg{
+  position: fixed;
+  top: 4rem;
+  width: 100%; 
+}
+
+.welcome-msg div{
+  width: 350px;
+  min-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding: 14px 16px;
+  background-color: rgba(18, 255, 46, 0.898);
+  border-radius: 10px;
+}
+
+.welcome-msg div span{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.welcome-msg div span p{
+  color: #fbfbff;
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+.welcome-msg div span svg{
+  margin:auto;
+  color: #fbfbff;
+  font-size: 1.5rem;
+}
+
+.welcome-msg div p{
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: #f8f8ff;
+}
+
+
+.registration-comp h2{
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.registration-comp form{
+  margin: 10vh auto !important;
+  display: flex;
+  flex-direction: column;
+  /* width: fit-content; */
+  width: 400px;
+  min-width: 300px;
+  height: fit-content; 
+  padding: 1.5rem 1.5rem 1rem;
+  border-radius: 15px; 
+  z-index: 6 !important;
+  background-color: #ffffff;  
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 500ms ease-in-out;
+}
+
+.registration-comp form input,
+ .registration-comp form button,
+ .registration-comp form label
+{font-family: 'Barlow', sans-serif;}
+
+
+.registration-comp form label{
+  margin: 1rem .8rem 0;
+  text-align: left;
+}
+ 
+.registration-comp form input[type="text"],
+.registration-comp form input[type="email"],
+.registration-comp form input[type="password"],
+.registration-comp form input[type="date"]
+/* .country-input */
+{
+  padding: 12px 16px;
+  margin: 1rem .4rem ;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.131),
+  inset -4px -4px 6px 0 rgba(255, 255, 255, 0.193);
+  background-color: #f8f8ff; 
+  font-size: 1rem;
+}
+
+.register-btn{
+  margin: 2.5rem auto 2rem;
+  padding: 10px 16px;
+  width: 50%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(43, 145, 247);
+  color: #ffffff;
+}
+
+.registration-comp p{
+  margin: 1.5rem 0 1rem;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+}
+
+.registration-comp p span{
+  cursor: pointer;
+  font-family: 'Barlow', sans-serif;
+}
+
+.registration-comp p span:hover{
+  text-decoration: underline;
+}
+
+.check-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.check-box > input{
+  cursor: pointer;
+}
+
+.check-box > label{
+  margin: 0 .5rem .25rem !important;
+}
+
+
+.check{
+  color: rgb(3, 255, 91);
+}
+
+.times{
+  color: rgb(255, 5, 5);
+}
+
+.pswrd{
+  background-color: ghostwhite;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 8px;
+  margin: 1rem 8px .5rem;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.131),
+  inset -4px -4px 6px 0 rgba(255, 255, 255, 0.193);
+  
+}
+
+.pswrd input{
+  background-color: #f8f8ff; 
+  box-shadow: none !important;
+  margin:0 0 0 !important;
+  padding:9px 0;
+  width: 100%;
+  border-radius: none !important;
+}
+
+.pswrd span{ 
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  vertical-align: middle; 
+  margin: auto;
+  background-color: #fbfbff; 
+}
+
+
+.pswrd span svg{
+  color: #1d1d1d
+}
+
+#note{
+  position: relative;
+  text-align: left;
+  margin: .5rem auto ;
+  /* margin-left: 0 !important;
+  margin-right: 0 !important; */
+  padding: 12px 14px;
+  width: 85%;
+  background-color: #101010;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+#note svg{
+  margin: 0 5px 0 0 ;
+}
+
+
+#country{
+  border: none;
+}
+
+
+/* Country */
+
+.country-comp{
+  position: relative;
+  /* margin: .5rem 0 0; */
+}
+
+.country-input{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px 12px;
+  margin: 1rem .4rem ;
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.131),
+  inset -4px -4px 6px 0 rgba(255, 255, 255, 0.193);
+  background-color: #fbfbff; 
+}
+
+.country-input-field{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+.country-input-field input{
+  border-radius: none !important;
+  outline: none;
+  background-color: none;
+  box-shadow: none !important;
+  padding: 0 16 !important;
+  margin: 0 !important;
+  border-radius: none !important;
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+.country-input-field span{
+  float: right; 
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+}
+ 
+
+.country-list{
+  position: absolute;
+  list-style: none;
+  width: 85%;
+  height: 150px;
+  margin: 0 1.5rem;
+  border-radius: 8px;
+  overflow-y: scroll;
+  display: none;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.2);
+  background-color: #ffffff; 
+  z-index: 1;
+}
+
+.country-list li{
+  padding: 4px 14px;
+  display: flex;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.country-list li img{
+  /* width: 25px; */
+  height: 13px;
+  margin: 5px 10px;
+}
+ 
+.country-list li:hover{
+  background-color: ghostwhite;
+}
+ 
+
+.country-comp:hover .country-list
+.country-comp:focus .country-list
+{
+  display: block !important;
+}
+
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) { 
+    
+  
+ }
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+ }
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+}
+ 
+
+ @media  (max-height:480px) {
+  
+
+
+ }
+ 
+ 
+
+ /*  X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+  
+}
+
+/*   Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .registration-comp form{
+    width: 85%;
+  }
+
+  .err-msg span{
+    width: 80%;
+  }
+  
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+ }
+
+  /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+  
+ }
+
+/*   X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+  
+ }
+
+
+
+
+
+
+
+
+
+

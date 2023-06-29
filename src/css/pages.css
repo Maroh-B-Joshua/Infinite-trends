@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+
+
+
+h1, h2, h3, h4{
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Lato', sans-serif;
+}
+
+
+.body{
+  position: absolute;
+  left: 0;
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%; 
+  transition: all 500ms ease-in-out;
+  /* z-index:1; */
+}
+
+.glass-bg{  
+  /* background-image: url("../Ui-bg/bull-bear.png");  */
+  background-image: url("../Ui-bg/lady-3.png"); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-attachment: fixed;
+  position: absolute;
+  left: 0;
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%; 
+  z-index: 2;
+  transition: all 1500ms ease-in-out;
+}
+
+
+.main{
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 2;
+  transition: all 500ms ease-in-out;
+}
+ 
+#bg-light{
+  background-color: #f5f5f5 !important;
+  transition: all 500ms ease-in-out;
+}
+
+#bg-dark{
+  background-color: #141414 !important;
+  transition: all 500ms ease-in-out;
+}
+
+
+
+
+.load{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: ghostwhite;
+  z-index: 1000;
+  display: none;
+}
+
+.load div{
+  margin: 5rem auto;
+}
+
+.load div h1{
+  text-align: center;
+}
+ 
+
+ /*  X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+ 
+  
+ }
+
+/*   Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .main{
+    width: 100%;
+  } 
+
+  
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+  .glass-bg{
+    background-size: cover;
+  }
+ }
+
+  /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+  
+ }
+
+/*   X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+
+  
+  
+}
+
+@media  (max-height:500px ) {
+  .main{
+    width: 100% !important;
+  }
+
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+ }
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+ }

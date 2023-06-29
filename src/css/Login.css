@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+
+
+.login-comp{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 20;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* .login-glass-bg{  
+  background-image: url("../Ui-bg/bull-bear.png"); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-attachment: scroll;
+  position: absolute;
+  left: 0;
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%; 
+  z-index: -2;
+  transition: all 1500ms ease-in-out;
+} */
+
+
+.form{
+  margin: 6vh auto !important;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 300px;
+  height: fit-content; 
+  padding: 1.5rem 1.5rem 1rem;
+  border-radius: 15px; 
+  z-index: 3 !important;
+}
+
+
+.login-logo{
+  margin:0 0 !important;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.login-logo div{ 
+  margin: 0 !important;
+  position: inherit;
+}
+.login-logo div > svg{ 
+  font-size: 4rem !important;
+  width: 100px; 
+}
+  
+.form label, .form input{
+  font-family: 'Barlow', sans-serif;
+  margin: 1rem 8px .5rem;
+}
+
+.form label{
+  text-align: left;
+}
+
+.form input{
+  padding: 12px 16px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent;
+}
+
+.form button{
+  font-size: .9rem;
+  margin: 1rem auto 2rem;
+  padding: 10px 16px;
+  width: 50%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.forget{
+  cursor: pointer;
+}
+.forget:hover{
+  text-decoration: underline;
+}
+
+
+.form p{
+  text-align: center;
+  margin: 1rem 0;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 200 !important;
+  font-size: 1.1rem;
+
+}
+.form p span{
+  cursor: pointer;
+}
+.form p span:hover{
+  text-decoration: underline;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.pswd{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  padding: 4px 12px;
+  margin: 1rem 8px .5rem;
+  border-radius: 10px;
+}
+
+.pswd input{
+  background-color: transparent;
+  margin:0 0 0;
+  padding:9px 0;
+}
+
+.pswd span{
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  cursor: pointer;
+  vertical-align: middle; 
+  margin: auto;
+}
+  
+ 
+/*  Theme */
+
+#bg-primary-light{
+  background-color: #ffffff !important;  
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 500ms ease-in-out;
+}
+
+
+#bg-primary-dark{
+  background-color: #2e2e2e !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.658);
+  transition: all 500ms ease-in-out;
+}
+ 
+#light-color, #light-color a span, 
+#light-color a svg,
+#light-color label,
+#light-color + input,
+#light-color input,
+#light-color input:-webkit-autofill
+{
+  color: #1d1d1d; 
+}
+
+#dark-color, 
+#dark-color a svg,
+#dark-color label,
+#dark-color + input,
+#dark-color input,
+#dark-color input:-webkit-autofill
+{
+  color: #fdfdfd; 
+  -webkit-text-fill-color: #fdfdfd ;
+}
+
+
+#light-theme-shadow{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#dark-theme-shadow{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* morphism */
+
+#light-input{
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.131),
+  inset -4px -4px 6px 0 rgba(255, 255, 255, 0.193);
+  background-color: #fbfbff;
+}
+
+
+
+#dark-input{
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.374),
+  inset -4px -4px 3px 0 rgba(255, 255, 255, 0.182);
+  background-color: #161616;
+}
+
+
+#glass-bg{
+  border-radius: 20px; 
+  border-top: 1px solid rgba(255,255,255,0.5) !important;
+	backdrop-filter: blur(5px) !important;
+	border-left: 1px solid rgba(255,255,255,0.5) !important;	
+	background: rgba(255,255,255,0.05) !important;
+  transition: all 500ms ease-in-out;
+}
+
+#glass-input{
+  border-top:1px solid transparent;
+  border-left:1px solid transparent; 
+}
+
+#glass-input{
+  border-top: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+	border-left: 1px solid rgba(255,255,255,0.5);	
+	background: rgba(255, 255, 255, 0.115);
+}
+
+ 
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) { 
+    
+  
+ }
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+ }
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+ }
+
+
+
+
+
+ @media  (max-height:480px) {
+  
+
+
+ }
+ 
+ 
+
+ /*  X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+  
+}
+
+/*   Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+ 
+  .login-glass-bg{   
+    background-size: cover; 
+  }
+  
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+ 
+.login-comp{
+  overflow-y: scroll;
+}
+
+
+ }
+
+  /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+  
+
+ }
+
+/*   X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+  
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

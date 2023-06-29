@@ -1,0 +1,41 @@
+#light-color{
+  color: #1d1d1d !important;
+}
+
+#dark-color {
+  color: #fdfdfd !important;  
+}
+
+/* Mobile logo */
+
+.logo-svg {
+  width: fit-content;
+  margin: auto;
+  position: relative; 
+}
+.logo-svg > svg{
+  font-size:2.5rem !important;
+  width: 70px;
+
+}
+
+
+/* lage screens logo */
+
+.ls-logo-svg {
+  width: fit-content;
+  align-self: left;
+  display: flex;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.ls-logo-svg > svg{
+  font-size:2rem !important;
+  width: 70px;
+}
+
+
+
+
+

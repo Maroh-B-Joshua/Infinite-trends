@@ -1,0 +1,180 @@
+:root{
+  --blue:#007bff; 
+  --pink:#e83e8c;
+  --green:#19d35a;
+  --gold:#ffbf00;
+  --cyan: #17a2b8;
+  --purple: #6f42c1;
+  --anime: all 500ms ease-in-out;
+}
+
+/* blue */
+#color-blue,
+.color-blue span,
+.color-blue svg
+{
+  color: var(--blue) !important;
+  transition: var(--anime);
+}
+#bg-blue{
+  background-color: var(--blue) !important; 
+  color: #fff;
+  transition: var(--anime);
+}
+
+.link-blue:hover a, 
+.link-blue:hover a span, 
+.link-blue:hover a svg,
+#link-blue:hover a, 
+#link-blue:hover a span, 
+#link-blue:hover a svg,
+.active a,
+.active a span,
+.active a svg {
+  color: var(--blue) !important;
+  transition: var(--anime);
+}
+
+/* pink */
+#color-pink,
+.color-pink span,
+.color-pink svg{
+  color: var(--pink) !important;
+  transition: var(--anime);
+}
+
+#bg-pink{
+  background-color: var(--pink) !important;
+  color: #fff;
+  transition: var(--anime);
+}
+.link-pink:hover a,
+.link-pink:hover a span,
+.link-pink:hover a svg,
+#link-pink:hover a,
+#link-pink:hover a span,
+#link-pink:hover a svg,
+.active a,
+.active a span,
+.active a svg{
+  color: var(--pink) !important;
+  transition: var(--anime);
+}
+
+/* green */
+.color-green span,
+.color-green svg,
+#color-green
+{
+  color: var(--green) !important; 
+  transition: var(--anime);
+}
+#bg-green{
+  background-color: var(--green) !important;
+  color: #fff;
+  transition: var(--anime);
+}
+.link-green:hover a,
+.link-green:hover a span, 
+.link-green:hover a svg,
+#link-green:hover a,
+#link-green:hover a span, 
+#link-green:hover a svg,
+.active a,
+.active a span,
+.active a svg{
+  color: var(--green) !important;
+  transition: var(--anime);
+}
+
+
+
+/* gold */
+
+.color-gold span,
+.color-gold svg,
+#color-gold
+{
+  color: var(--gold) !important;
+  transition: var(--anime);
+}
+#bg-gold{
+  background-color: var(--gold);
+  color: #fff;
+  transition: var(--anime);
+}
+.link-gold:hover a,
+.link-gold:hover a span,
+.link-gold:hover a svg,
+#link-gold:hover a,
+#link-gold:hover a span,
+#link-gold:hover a svg,
+.active a,
+.active a span,
+.active a svg{
+  color: var(--gold) !important;
+  transition: var(--anime);
+}
+
+
+/* cyan */
+
+.color-cyan span,
+.color-cyan svg,
+#color-cyan
+{
+  color: var(--cyan) !important;
+  transition: var(--anime);
+}
+#bg-cyan{
+  background-color: var(--cyan);
+  color: #fff;
+}
+.link-cyan:hover a, 
+.link-cyan:hover a span, 
+.link-cyan:hover a svg,
+#link-cyan:hover a, 
+#link-cyan:hover a span, 
+#link-cyan:hover a svg,
+.active a,
+.active a span,
+.active a svg{
+  color: var(--cyan) !important;
+  transition: var(--anime);
+}
+
+
+/* purple */
+
+.color-purple span,
+.color-purple svg,
+#color-purple
+{
+  color: var(--purple) !important;
+  transition: var(--anime);
+}
+
+#bg-purple{
+  background-color: var(--purple);
+  color: #fff;
+  transition: var(--anime);
+}
+
+.link-purple:hover a, 
+.link-purple:hover a span, 
+.link-purple:hover a svg,
+#link-purple:hover a, 
+#link-purple:hover a span, 
+#link-purple:hover a svg,
+.active a,
+.active a span,
+.active a svg{
+  color: var(--purple) !important;
+  transition: var(--anime);
+}
+
+
+
+
+
+/* Don't forget to use one of the colors for an active nav links */
